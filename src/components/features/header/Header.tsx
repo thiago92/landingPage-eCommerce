@@ -1,4 +1,5 @@
 import logo from "../../../../public/assets/images/logo.png"
+import { SearchInput } from "./search-input/SearchInput"
 
 export default function Header() {
     return(
@@ -7,7 +8,9 @@ export default function Header() {
                 <div className="w-[20%]">
                     <img src={logo} alt="logo" className="w-full"/>
                 </div>
-                <div></div>
+                <div>
+                    <SearchInput />
+                </div>
                 <div>
                     <div></div>
                     <div></div>
