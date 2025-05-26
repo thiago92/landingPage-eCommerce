@@ -8,7 +8,7 @@ interface ZoomImageProps {
 }
 
 export default function ZoomImage({ src, alt, onHoverChange, onPositionChange }: ZoomImageProps) {
-    const [backgroundPos, setBackgroundPos] = useState('50% 50%');
+    const [, setBackgroundPos] = useState('50% 50%');
 
     const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
         const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
